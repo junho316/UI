@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:5500/map.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./MAP Page_files/style.css">
+	<link rel="stylesheet" href="./MAP Page_files/map.css">
+	<link href="./MAP Page_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+	<script src="./MAP Page_files/bootstrap.bundle.min.js.다운로드" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+	<title>MAP Page</title>
+
+	    <style>
+.area {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #888;
+    border-radius: 3px;
+    font-size: 12px;
+    top: -5px;
+    left: 15px;
+    padding:2px;
+}
+
+.info {
+    font-size: 12px;
+    padding: 5px;
+}
+.info .title {
+    font-weight: bold;
+}
+</style>
+
+</head>
+
+<body class="vh-100 overflow-hiddden">
+	<!--------------------------------------nav ------------------------------------------------------->
+	<nav class="navbar navbar-expand-lg navbar navbar-light bg-light">
+		<div class="container">
+			<!-- LOGO -->
+			<a class="navbar-brand fs-4" href="http://127.0.0.1:5500/map.html#">LOGO</a>
+			<!-- Toggle BTN -->
+			<button class="navbar-toggler shadow-none border-0 " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- sidebar -->
+			<div class="offcanvas offcanvas-start sidebar" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+				<!-- sidebar header -->
+				<div class="offcanvas-header border-bottom">
+					<h5 class="offcanvas-title" id="offcanvasNavbarLabel">LOGO</h5>
+					<button type="button" class="btn-close shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<!-- sidebar body -->
+				<div class="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
+					<ul class="navbar-nav justify-content-center fs-5 flex-grow-1 pe-3">
+						<li class="nav-item mx-4">
+							<a class="nav-link" aria-current="page" href="http://127.0.0.1:5500/map.html#">홈</a>
+						</li>
+						<div class="dropdown-center">
+							<li class="nav-item dropdown mx-4">
+								<a class="nav-link dropdown-toggle" href="http://127.0.0.1:5500/map.html#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+									입지분석
+								</a>
+								<ul class="dropdown-menu">
+									<li><a class="dropdown-item" href="http://127.0.0.1:5500/map.html#">인구분석</a></li>
+									<li><a class="dropdown-item" href="http://127.0.0.1:5500/map.html#">병원현황</a></li>
+									<li><a class="dropdown-item" href="http://127.0.0.1:5500/map.html#">지도</a></li>
+								</ul>
+							</li>
+						</div>
+						<li class="nav-item mx-4">
+							<a class="nav-link" href="http://127.0.0.1:5500/map.html#">매출분석</a>
+						</li>
+						<li class="nav-item mx-4">
+							<a class="nav-link" href="http://127.0.0.1:5500/map.html#">게시판</a>
+						</li>
+					</ul>
+					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+						<a href="http://127.0.0.1:5500/map.html#" class="text-dark">로그인</a>
+						<a href="http://127.0.0.1:5500/map.html#" class="text-white text-decoration-none px-3 py-1 rounded-4" style="background-color: #f94ca4;">회원가입</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<!-------------------------------------- ------------------------------------------------------->
+
+	<div class="container-fluied">
+		<div id="map" class="col-lg-12">
+		</div>
+
+	</div>
+
+	<!-------------------------------------- ------------------------------------------------------->
+
+
+	<script type="text/javascript" src="./MAP Page_files/sdk.js.다운로드"></script>
+	<script src="./MAP Page_files/map.js.다운로드"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
