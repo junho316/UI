@@ -16,7 +16,7 @@
 </head>
 
 <body class="vh-100 overflow-hiddden">
-	<!--------------------------------------nav ------------------------------------------------------->
+	<!--nav------------------------------------ ------------------------------------------------------->
 	<nav class="navbar fixed-top navbar-expand-lg navbar navbar-light bg-light ">
 		<div class="container">
 			<!-- LOGO -->
@@ -69,7 +69,7 @@
 		</div>
 	</nav>
 
-	<!-------------------------------------- ------------------------------------------------------->
+	<!--carousel ------------------------------------------------------->
 
 	<div>
 		<div id="mainCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
@@ -79,42 +79,47 @@
 				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
 				<button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
 			</div>
-	
+
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<img src="img/1.jpg" alt="">
 					<div class="container">
 						<div class="carousel-caption text-start">
 							<h1>왼쪽</h1>
-							<p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio minima facilis quos obcaecati, perferendis est consequatur similique corporis esse? Cum rerum ad tenetur, sapiente officiis alias minus enim suscipit!</p>
+							<p class="opacity-75">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste distinctio minima
+								facilis quos obcaecati, perferendis est consequatur similique corporis esse? Cum rerum ad tenetur,
+								sapiente officiis alias minus enim suscipit!</p>
 							<p><a class="btn btn-lg btn-primary" href="#">버튼1</a></p>
 						</div>
 					</div>
 				</div>
-	
+
 				<div class="carousel-item">
 					<img src="img/2.jpg" alt="">
 					<div class="container">
 						<div class="carousel-caption">
 							<h1>가운데</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem officiis quo repellat modi ipsa est deleniti, reiciendis pariatur soluta assumenda, excepturi, illum maxime fuga architecto maiores rerum repudiandae reprehenderit!</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit exercitationem officiis quo repellat
+								modi ipsa est deleniti, reiciendis pariatur soluta assumenda, excepturi, illum maxime fuga architecto
+								maiores rerum repudiandae reprehenderit!</p>
 							<p><a class="btn btn-lg btn-primary" href="#">버튼2</a></p>
 						</div>
 					</div>
 				</div>
-	
-				<div class="carousel-item" >
+
+				<div class="carousel-item">
 					<img src="img/3.jpg" alt="">
 					<div class="container">
 						<div class="carousel-caption text-end">
 							<h1>오른쪽</h1>
-							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nemo dolorem obcaecati culpa aut odio ipsa ducimus nihil dignissimos recusandae repudiandae esse mollitia consequatur saepe laudantium consectetur aliquid adipisci sequi.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, nemo dolorem obcaecati culpa aut odio
+								ipsa ducimus nihil dignissimos recusandae repudiandae esse mollitia consequatur saepe laudantium
+								consectetur aliquid adipisci sequi.</p>
 							<p><a class="btn btn-lg btn-primary" href="#">버튼3</a></p>
 						</div>
 					</div>
 				</div>
 			</div>
-	
 			<button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
 			</button>
 			<button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
@@ -122,27 +127,83 @@
 		</div>
 	</div>
 
+	<!--게시판------------------------------------------------------------------------------------------->
+
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-6" style="background-color: black; height: 500px;">
-
+			<div id="board" class="col-sm-6" style="background-color: red;">
+				<h1>게시판</h1>
+				<table class="table">
+					<colgroup>
+						<col width=10%>
+						<col width=60%>
+						<col width=30%>
+					</colgroup>
+					<thead>
+					</thead>
+					<tbody>
+						<tr>
+							<th><a href="">1</a></th>
+							<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam dignissimos vitae vero voluptatibus labore quibusdam, dolorem quisquam placeat sint iure, molestiae aut rerum eaque dolor nesciunt accusantium at consequuntur. Minima!</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>2</th>
+							<td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure qui eius aut eaque. Excepturi quam facere incidunt illo temporibus officiis dolorem vel repellat delectus libero dignissimos enim, dolorum placeat.</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>3</th>
+							<td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Beatae unde illum, tenetur quas repellendus cupiditate voluptas vitae aspernatur ipsum facere corporis eveniet, quo libero voluptatum. Aliquam repudiandae ipsam optio reiciendis?</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>4</th>
+							<td>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi, porro atque. Tenetur quidem consequatur voluptates magni veniam. Nam fugiat repudiandae fuga ex natus illo sit, earum quod! Magni, quisquam quam?</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>5</th>
+							<td>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero quisquam est soluta exercitationem laudantium nam consequuntur dolorum eligendi aspernatur fugiat, corrupti labore, iusto nesciunt natus quo accusamus quidem debitis consequatur!</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>6</th>
+							<td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, perspiciatis autem, sequi earum illum ullam ratione repellendus quis praesentium eius aut eveniet necessitatibus laboriosam eos ad reiciendis suscipit magni? Dolor!</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>7</th>
+							<td>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est exercitationem provident nostrum veniam dignissimos vel. Consectetur dolores quasi modi enim mollitia distinctio repellat necessitatibus sed quia doloremque culpa, sapiente illo!</td>
+							<td>2022-02-22</td>
+						</tr>
+						<tr>
+							<th>8</th>
+							<td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis iure culpa consectetur dolore tenetur veniam, rerum odio earum animi, nisi voluptatem quae, temporibus assumenda unde officiis. Eveniet repellat nostrum voluptate?</td>
+							<td>2022-02-22</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
-			<div class="col-sm-6" style="background-color: blue; height: 500px;">
+			<div class="col-sm-6" style="background-color: blue; height: 500px; 	margin-top: 50px;">
 
 			</div>
 		</div>
-	</div>	
+	</div>
 
-	<!-------------------------------------- ------------------------------------------------------->
+	<!--footer------------------------------------------------------------------------------------------->
 
 	<footer class="text-body-secondary py-5">
 		<div class="container">
 			<p class="float-end mb-1">
 				<!-- <a href="#">Back to top</a> -->
 			</p>
-			<p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-			<p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-					href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+			<p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam delectus voluptates iste
+				expedita alias accusantium vero, atque ipsa sapiente corporis? Est dicta obcaecati, eligendi accusamus minima
+				nulla quos quo culpa.</p>
+			<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi esse adipisci iure, blanditiis,
+				a quibusdam quo maiores vel dignissimos quae optio molestiae culpa enim, praesentium minima ipsa ad! Distinctio.
+			</p>
 		</div>
 	</footer>
 	<script src="js/main.js"></script>

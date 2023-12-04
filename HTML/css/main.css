@@ -17,7 +17,7 @@ ul {
 	list-style: none;
 }
 
-/* slide */
+/* Carousel */
 
 #mainCarousel img {
 	width: 100%;
@@ -26,9 +26,63 @@ ul {
 	filter: brightness(50%);
 }
 
-#temp {
+/* board */
+
+#board {
+	margin-top: 50px;
+	margin-bottom: 50px;
 	height: 500px;
+	padding: 0;
 }
+#board h1 {
+	height: 100px;
+	background-color: #F8F9FA;
+	line-height: 100px;
+	padding-left: 10px;
+	margin: 0 ;
+}
+
+#board table{
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+}
+
+#board table tr{
+ height: 50px;
+}
+
+#board table td{
+  white-space: nowrap;
+	overflow: hidden;
+	border: solid 1px black;
+}
+#board table th{
+	text-align: center;
+}
+#board table td:last-child{
+	text-align: center;
+}
+/*
+#board ul {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+#board ul li {
+	height: 50px;
+	border-bottom: lightgray 1px solid;
+	white-space: nowrap;
+	overflow: hidden;
+	line-height: 50px;
+	padding-left: 5px;
+}
+
+#board ul li:first-child{
+	height: 100px;
+	line-height: 100px;
+} */
 
 /* footer */
 footer {
