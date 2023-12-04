@@ -2,35 +2,36 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-  }
-  
-  #container {
+}
+
+#container {
 	margin: 0 auto;
 	width: 100%;
-  }
-  
-  a {
+}
+
+a {
 	text-decoration: none;
-  }
-  
-  ul {
+}
+
+ul {
 	list-style: none;
-  }
-  /* slide */
-  
-  
-  #slides img {
+}
+
+/* slide */
+
+#mainCarousel img {
 	width: 100%;
-	height: 400px;
-	object-fit: cover;
-  }
-  
-  #temp{
 	height: 500px;
-  }
-  
-  /* footer */
-  footer {
+	object-fit: cover;
+	filter: brightness(50%);
+}
+
+#temp {
+	height: 500px;
+}
+
+/* footer */
+footer {
 	background-color: #F8F9FA;
 	border-top: 1px lightgray solid;
-  }
+}
