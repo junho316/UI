@@ -60,6 +60,19 @@ nav{
 	text-decoration: underline;
 }
 
+#mapOverlay{
+	padding: 5px 0;
+	text-align: center;
+	width: 180px;
+	border: 1px solid black;
+	background-color: #F8F9FA;
+	border-radius: 10px;
+}
+
+#mapOverlay li:first-child:hover{
+	text-decoration: underline;
+}
+
 /******************************/
 /* FOOTER                     */
 /******************************/

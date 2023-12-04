@@ -1,10 +1,15 @@
 
  function mapMenuClick(e){
     document.querySelector('#mapMenu').innerHTML = e.innerHTML;
-    document.querySelector('#tem').innerHTML = e.innerHTML;
- }
+
+		var selall = document.querySelectorAll('.tempNum');
+		for(let i = 0; i < selall.length; i++){
+			selall[i].innerHTML = e.innerHTML;
+		}
+}
 
  
  function ClickPopUpBtn(e){
-    document.querySelector('#exampleModalLabel').innerHTML = e.innerHTML;
+    document.querySelector('#PopUpArea').innerHTML = e.innerHTML;
  }
+
