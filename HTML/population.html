@@ -5,14 +5,13 @@
 	<meta charset="UTF-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<link rel="stylesheet" href="css/map.css">
 	<link rel="stylesheet" href="css/population.css">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
 		crossorigin="anonymous"></script>
-	<title>MAP Page</title>
+	<title>인구분석</title>
 
 	<style>
 		.area {
@@ -40,7 +39,7 @@
 
 <body class="vh-100 overflow-hiddden">
 	<!--------------------------------------nav ------------------------------------------------------->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light ">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light " style="border-bottom: 1px solid lightgray;">
 		<div class="container">
 			<!-- LOGO -->
 			<a class="navbar-brand fs-4" href="main.html">LOGO</a>
@@ -71,6 +70,7 @@
 								<ul class="dropdown-menu">
 									<li><a class="dropdown-item" href="population.html">인구분석</a></li>
 									<li><a class="dropdown-item" href="hospitalStatus.html">병원현황</a></li>
+									<li><a class="dropdown-item" href="map.html">map</a></li>
 								</ul>
 							</li>
 						</div>
@@ -91,48 +91,29 @@
 		</div>
 	</nav>
 
-	<!-- 지도--------------------------------------------------------------------------- -->
-	<div class="container" style="position: relative;">
-		<h1 style="margin-top: 100px;">지도</h1>
-		<div id="map" class="col-lg-12">
-			<div class="dropdown">
-				<button class="btn btn-first dropdown-toggle" type="button" id="mapMenu" data-bs-toggle="dropdown"
-					aria-expanded="false">
-					선택
-				</button>
-				<ul class="dropdown-menu">
-					<li onclick="addArea();mapMenuClick(this)">거주 인구</li>
-					<li onclick="addArea();mapMenuClick(this)">유동 인구</li>
-					<li onclick="addArea();mapMenuClick(this)">인구/병원수</a></li>
-					<li onclick="addArea();mapMenuClick(this)">병원수</li>
-					<li onclick="delArea();mapMenuClick(this)">병원 위치</li>
-				</ul>
-			</div>
-		</div>
-	</div>
-
 	<!--유동인구------------------------------------------------------------------------------------------->
 
 	<div class="container">
-		<h1 style="margin-top: 50px;">유동인구</h1>
+		<h1 style="margin-top: 120px;">유동인구</h1>
 		<h4 style="margin-top: 50px;">분기별 유동인구</h4>
 
 		<div id="floatingDashboard">
 		</div>
 
-		<div id="floatingTable">
+		<div id="floatingTable"  class="table-responsive">
 			<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
-						<th scope="col"></th>
-						<th scope="col">2021년 4분기</th>
-						<th scope="col">2022년 1분기</th>
-						<th scope="col">2022년 2분기</th>
-						<th scope="col">2022년 3분기</th>
-						<th scope="col">2022년 4분기</th>
-						<th scope="col">2023년 1분기</th>
-						<th scope="col">2023년 2분기</th>
-					</tr>
+						<th scope=" col">
+				</th>
+				<th scope="col">2021년 4분기</th>
+				<th scope="col">2022년 1분기</th>
+				<th scope="col">2022년 2분기</th>
+				<th scope="col">2022년 3분기</th>
+				<th scope="col">2022년 4분기</th>
+				<th scope="col">2023년 1분기</th>
+				<th scope="col">2023년 2분기</th>
+				</tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -170,19 +151,20 @@
 		</div>
 
 		<h4 style="margin-top: 50px;">요일별 유동인구</h4>
-		<div id="dayOfTheWeek">
+		<div id="dayOfTheWeek"  class="table-responsive">
 			<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
-						<th scope="col"></th>
-						<th scope="col">2021년 4분기</th>
-						<th scope="col">2022년 1분기</th>
-						<th scope="col">2022년 2분기</th>
-						<th scope="col">2022년 3분기</th>
-						<th scope="col">2022년 4분기</th>
-						<th scope="col">2023년 1분기</th>
-						<th scope="col">2023년 2분기</th>
-					</tr>
+						<th scope=" col">
+				</th>
+				<th scope="col">2021년 4분기</th>
+				<th scope="col">2022년 1분기</th>
+				<th scope="col">2022년 2분기</th>
+				<th scope="col">2022년 3분기</th>
+				<th scope="col">2022년 4분기</th>
+				<th scope="col">2023년 1분기</th>
+				<th scope="col">2023년 2분기</th>
+				</tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -222,7 +204,7 @@
 
 	<!--거주인구------------------------------------------------------------------------------------------->
 
-	<div class="container">
+	<div class="container"  class="table-responsive">
 		<h1 style="margin-top: 50px;">주거인구</h1>
 		<h4 style="margin-top: 50px;">주거인구 추이</h4>
 
@@ -233,12 +215,13 @@
 			<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
-						<th scope="col"></th>
-						<th scope="col">2019년</th>
-						<th scope="col">2020년</th>
-						<th scope="col">2021년</th>
-						<th scope="col">2022년</th>
-					</tr>
+						<th scope=" col">
+				</th>
+				<th scope="col">2019년</th>
+				<th scope="col">2020년</th>
+				<th scope="col">2021년</th>
+				<th scope="col">2022년</th>
+				</tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -266,15 +249,16 @@
 			</table>
 		</div>
 
-		
-	<div id="ageGender">
-		<h4 style="margin-top: 50px;">성별, 연령대별 주기인구</h4>
-		<table class="table table-bordered border-black align-middle text-center"">
+
+		<div id="ageGender"  class="table-responsive">
+			<h4 style="margin-top: 50px;">성별, 연령대별 주기인구</h4>
+			<table class="table table-bordered border-black align-middle text-center"">
 			<thead>
 				<tr>
-					<th scope="col" rowspan="2"></th>
-					<th scope="col" colspan="2">성별</th>
-					<th scope="col" colspan="7">연령</th>
+					<th scope=" col" rowspan="2">
+				</th>
+				<th scope="col" colspan="2">성별</th>
+				<th scope="col" colspan="7">연령</th>
 				</tr>
 				<tr>
 					<th scope="col">남성</th>
@@ -287,48 +271,47 @@
 					<th scope="col">50대</th>
 					<th scope="col">60대이상</th>
 				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<th scope="row">송파구 위례동</th>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-				</tr>
-				<tr>
-					<th scope="row">성남시 위례동</th>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-				</tr>
-				<tr>
-					<th scope="row">하남시 위례동</th>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-					<td>-</td>
-				</tr>
-			</tbody>
-		</table>
-	</div>
-	</div>
+				</thead>
+				<tbody>
+					<tr>
+						<th scope="row">송파구 위례동</th>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th scope="row">성남시 위례동</th>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+					<tr>
+						<th scope="row">하남시 위례동</th>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+						<td>-</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
 	</div>
 
 	<!--인구예측------------------------------------------------------------------------------------------->
@@ -340,19 +323,20 @@
 		<div id="forecastDashboard">
 		</div>
 
-		<div id="forecastTable">
+		<div id="forecastTable"  class="table-responsive">
 			<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
-						<th scope="col"></th>
-						<th scope="col">2019년</th>
-						<th scope="col">2020년</th>
-						<th scope="col">2021년</th>
-						<th scope="col">2022년</th>
-						<th scope="col">2023년</th>
-						<th scope="col">2024년</th>
-						<th scope="col">2025년</th>
-					</tr>
+						<th scope=" col">
+				</th>
+				<th scope="col">2019년</th>
+				<th scope="col">2020년</th>
+				<th scope="col">2021년</th>
+				<th scope="col">2022년</th>
+				<th scope="col">2023년</th>
+				<th scope="col">2024년</th>
+				<th scope="col">2025년</th>
+				</tr>
 				</thead>
 				<tbody>
 					<tr>
@@ -391,53 +375,7 @@
 	</div>
 
 
-
-
-	<!-- Modal ----------------------------------------------------------------------------------->
-
-	<div class="modal fade" id="areaPopUP" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered">
-			<div class="modal-content">
-				<div class="modal-header">
-					<h5 class="modal-title" id="PopUpArea"></h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-				</div>
-				<div class="modal-body">
-					<table class="table">
-						<thead>
-							<tr>
-								<th scope="col"></th>
-								<th scope="col">수/명</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<th scope="row">병원수</th>
-								<td>1</td>
-							</tr>
-							<tr>
-								<th scope="row">유동인구</th>
-								<td>2</td>
-							</tr>
-							<tr>
-								<th scope="row">주거인구</th>
-								<td>3</td>
-							</tr>
-							<tr>
-								<th scope="row">인구/병원수</th>
-								<td>4</td>
-							</tr>
-							<tr>
-								<th scope="row">가장많은 연령대</th>
-								<td>5</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</div>
-		</div>
-	</div>
-
+	
 	<!-- footer------------------------------------ ------------------------------------------------------->
 
 	<footer class="text-body-secondary py-5">
@@ -445,18 +383,15 @@
 			<p class="float-end mb-1">
 				<!-- <a href="#">Back to top</a> -->
 			</p>
-			<p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-			<p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a
-					href="/docs/5.3/getting-started/introduction/">getting started guide</a>.</p>
+			<p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam delectus voluptates iste
+				expedita alias accusantium vero, atque ipsa sapiente corporis? Est dicta obcaecati, eligendi accusamus minima
+				nulla quos quo culpa.</p>
+			<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi esse adipisci iure, blanditiis,
+				a quibusdam quo maiores vel dignissimos quae optio molestiae culpa enim, praesentium minima ipsa ad! Distinctio.
+			</p>
 		</div>
 	</footer>
 
-	<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9f622a57db8d51137b80a7e575e09fca"></script>
-	<script src="js/kakaoMap.js"></script>
-	<script src="js/map.js"></script>
-	<script>
-
-	</script>
 </body>
 
 </html>

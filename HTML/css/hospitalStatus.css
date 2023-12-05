@@ -17,12 +17,53 @@ ul{
 	list-style: none;
 }
 
+table tbody th{
+	width: 15%;
+}
+
 /******************************/
 /* HEADER                     */
 /******************************/
 
 nav{
 	border-bottom: 1px lightgray solid;
+}
+
+#hospitalStatusDashboard{
+	margin-top: 50px;
+	height: 500px;
+	background-color: yellow;
+}
+
+#hospitalStatusTable{
+	margin-top: 50px;
+	height: 200px;
+}
+
+#hospitalStatusTable table{
+	width: 1295px;
+}
+
+/**********************************  */
+
+#dayOfTheWeek{
+	margin-top: 50px;
+	height: 200px;
+}
+
+#dayOfTheWeek table{
+	width: 1295px;
+}
+
+/**********************************  */
+
+#popuDivideHos{
+	margin-top: 50px;
+	height: 200px;
+}
+
+#popuDivideHos table{
+	width: 1295px;
 }
 
 /******************************/

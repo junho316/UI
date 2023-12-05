@@ -17,6 +17,10 @@ ul{
 	list-style: none;
 }
 
+table tbody th{
+	width: 15%;
+}
+
 /******************************/
 /* HEADER                     */
 /******************************/
@@ -35,11 +39,10 @@ nav{
 }
 #floatingTable{
 	margin-top: 50px;
-	height: 300px;
 }
 
 #floatingTable table{
-	height: 100%;
+	width: 1295px;
 }
 
  #floatingTable table tr{
@@ -48,11 +51,12 @@ nav{
 
 #dayOfTheWeek{
 	margin-top: 50px;
-	height: 300px;
 }
+
 #dayOfTheWeek table{
-	height: 100%;
+	width: 1295px;
 }
+
 /******************************/
 #residentDashboard{
 	margin-top: 50px;
@@ -61,19 +65,18 @@ nav{
 }
 #residentTable{
 	margin-top: 50px;
-	height: 300px;
-
 }
+
 #residentTable table{
-	height: 100%;
+	width: 1295px;
 }
 
 #ageGender{
 	margin-top: 50px;
-	height: 300px;
+
 }
 #ageGender table{
-	height: 100%;
+	width: 1295px;
 }
 
 /******************************/
@@ -86,11 +89,10 @@ nav{
 
 #forecastTable{
 	margin-top: 50px;
-	height: 300px;
 
 }
 #forecastTable table{
-	height: 100%;
+	width: 1295px;
 }
 
 /******************************/
