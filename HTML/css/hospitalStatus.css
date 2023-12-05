@@ -29,10 +29,12 @@ nav{
 	border-bottom: 1px lightgray solid;
 }
 
+/**********************************  */
+
 #hospitalStatusDashboard{
+
 	margin-top: 50px;
 	height: 500px;
-	background-color: yellow;
 }
 
 #hospitalStatusTable{
