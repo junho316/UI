@@ -4,9 +4,7 @@ var mapContainer = document.getElementById('map'), // 지도를 표시할 div
 		level: 6 // 지도의 확대 레벨
 	};
 
-
 var map = new kakao.maps.Map(mapContainer, mapOption); // 지도를 생성합니다
-
 
 // 다각형을 구성하는 좌표 배열입니다. 이 좌표들을 이어서 다각형을 표시합니다 -----------------------------------------------------------
 var polygonPath1 = [
@@ -120,7 +118,6 @@ var polygon2 = new kakao.maps.Polygon({
 	fillOpacity: 0.7 // 채우기 불투명도 입니다
 });
 
-
 // 오버레이-------------------------------------------------------------------------------------
 var content1 = '<ul id="mapOverlay"><li data-bs-toggle="modal" data-bs-target="#areaPopUP" onclick="ClickPopUpBtn(this)">송파구 위례동</li><li class="tempNum"></li></ul>';
 var content2 = '<ul id="mapOverlay"><li data-bs-toggle="modal" data-bs-target="#areaPopUP" onclick="ClickPopUpBtn(this)">하남시 위례동</li><li class="tempNum"></li></ul>';
@@ -145,8 +142,6 @@ var customOverlay3 = new kakao.maps.CustomOverlay({
 	position: position3,
 	content: content3
 });
-
-
 
 // -----------------------------------------------------------------------
 

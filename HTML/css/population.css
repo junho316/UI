@@ -20,9 +20,77 @@ ul{
 /******************************/
 /* HEADER                     */
 /******************************/
-
 nav{
 	border-bottom: 1px lightgray solid;
+}
+
+/******************************/
+/* body                       */
+/******************************/
+
+#floatingDashboard{
+	margin-top: 50px;
+	height: 500px;
+	background-color: purple;
+}
+#floatingTable{
+	margin-top: 50px;
+	height: 300px;
+}
+
+#floatingTable table{
+	height: 100%;
+}
+
+ #floatingTable table tr{
+	margin: 0 auto;
+} 
+
+#dayOfTheWeek{
+	margin-top: 50px;
+	height: 300px;
+}
+#dayOfTheWeek table{
+	height: 100%;
+}
+/******************************/
+#residentDashboard{
+	margin-top: 50px;
+	height: 500px;
+	background-color: blue;
+}
+#residentTable{
+	margin-top: 50px;
+	height: 300px;
+
+}
+#residentTable table{
+	height: 100%;
+}
+
+#ageGender{
+	margin-top: 50px;
+	height: 300px;
+}
+#ageGender table{
+	height: 100%;
+}
+
+/******************************/
+
+#forecastDashboard{
+	margin-top: 50px;
+	height: 500px;
+	background-color: blue;
+}
+
+#forecastTable{
+	margin-top: 50px;
+	height: 300px;
+
+}
+#forecastTable table{
+	height: 100%;
 }
 
 /******************************/
@@ -30,6 +98,7 @@ nav{
 /******************************/
 
 footer{
+	margin-top: 50px;
 	background-color: #F8F9FA;
 	border-top: 1px lightgray solid;
 }

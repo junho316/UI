@@ -1,4 +1,3 @@
-
 function mapMenuClick(e) {
 	document.querySelector('#mapMenu').innerHTML = e.innerHTML;
 
@@ -11,4 +10,3 @@ function mapMenuClick(e) {
 function ClickPopUpBtn(e) {
 	document.querySelector('#PopUpArea').innerHTML = e.innerHTML;
 }
-
