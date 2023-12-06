@@ -26,11 +26,18 @@ table tbody th{
 /******************************/
 nav{
 	border-bottom: 1px lightgray solid;
+	background-color: white;
 }
 
 /******************************/
 /* body                       */
 /******************************/
+
+#shadow{
+	background-color: white;
+	border-radius: 50px;
+	box-shadow: 5px 5px 5px 5px lightgray;
+}
 
 #floatingDashboard{
 	margin-top: 50px;
@@ -82,7 +89,6 @@ nav{
 #forecastDashboard{
 	margin-top: 50px;
 	height: 500px;
-	background-color: blue;
 }
 
 #forecastTable{
@@ -98,7 +104,6 @@ nav{
 /******************************/
 
 footer{
-	margin-top: 50px;
 	background-color: #F8F9FA;
 	border-top: 1px lightgray solid;
 }

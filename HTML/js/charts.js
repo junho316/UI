@@ -18,7 +18,8 @@ function drawChart1() {
         chart: {
             // title: '위례시 치과 개·폐업 현황',
             // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-        }
+        },
+				width: 1200
     };
     var chart = new google.charts.Bar(document.getElementById('hospitalStatusDashboard'));
     chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -37,7 +38,8 @@ function drawChart2() {
         chart: {
             // title: '위례시 치과 개·폐업 현황',
             // subtitle: 'Sales, Expenses, and Profit: 2014-2017',
-        }
+        },
+				width: 1200
     };
     var chart = new google.charts.Bar(document.getElementById('residentDashboard'));
     chart.draw(data, google.charts.Bar.convertOptions(options));
@@ -68,7 +70,7 @@ function drawChart3() {
             // title: 'Box Office Earnings in First Two Weeks of Opening',
             // subtitle: 'in millions of dollars (USD)'
         },
-        // width: 900,
+				width: 1200
         // height: 500
     };
 
@@ -100,6 +102,7 @@ function drawChart4() {
             // title: 'Box Office Earnings in First Two Weeks of Opening',
             // subtitle: 'in millions of dollars (USD)'
         },
+				width: 1200
         // width: 900,
         // height: 500
     };

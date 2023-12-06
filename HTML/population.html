@@ -39,7 +39,7 @@
 
 <body class="vh-100 overflow-hiddden">
 	<!--------------------------------------nav ------------------------------------------------------->
-	<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light " style="border-bottom: 1px solid lightgray;">
+	<nav class="navbar fixed-top navbar-expand-lg navbar-light  ">
 		<div class="container">
 			<!-- LOGO -->
 			<a class="navbar-brand fs-4" href="main.html">LOGO</a>
@@ -84,313 +84,318 @@
 					<div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
 						<a href="#" class="text-dark">로그인</a>
 						<a href="#" class="text-white text-decoration-none px-3 py-1 rounded-4"
-							style="background-color: #f94ca4;">회원가입</a>
+							style="background-color: darkgray;">회원가입</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</nav>
-
+	<div style="height: 60px; width: 100px;"></div>
 	<!--유동인구------------------------------------------------------------------------------------------->
 
-	<div class="container">
-		<h1 style="margin-top: 120px;">유동인구</h1>
-		<h4 style="margin-top: 50px;">분기별 유동인구</h4>
-
-		<div id="floatingDashboard">
-		</div>
-
-		<div id="floatingTable"  class="table-responsive">
-			<table class="table table-bordered border-black align-middle text-center"">
+	<div class="container-fluid" style="background-color: #F8F9FA;">
+		<div style="height: 50px; width: 100px;"></div>
+		
+		<div class="container"  id="shadow">
+			<h1>유동인구</h1>
+			<h4 style="margin-top: 50px;">분기별 유동인구</h4>
+			<div id="floatingDashboard"></div>
+			<div id="floatingTable" class="table-responsive">
+				<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
 						<th scope=" col">
-				</th>
-				<th scope="col">2021년 4분기</th>
-				<th scope="col">2022년 1분기</th>
-				<th scope="col">2022년 2분기</th>
-				<th scope="col">2022년 3분기</th>
-				<th scope="col">2022년 4분기</th>
-				<th scope="col">2023년 1분기</th>
-				<th scope="col">2023년 2분기</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">송파구 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+					</th>
+					<th scope="col">2021년 4분기</th>
+					<th scope="col">2022년 1분기</th>
+					<th scope="col">2022년 2분기</th>
+					<th scope="col">2022년 3분기</th>
+					<th scope="col">2022년 4분기</th>
+					<th scope="col">2023년 1분기</th>
+					<th scope="col">2023년 2분기</th>
 					</tr>
-					<tr>
-						<th scope="row">성남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<th scope="row">하남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">송파구 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">성남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">하남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
-		<h4 style="margin-top: 50px;">요일별 유동인구</h4>
-		<div id="dayOfTheWeek"  class="table-responsive">
-			<table class="table table-bordered border-black align-middle text-center"">
+			<h4 style="margin-top: 50px;">요일별 유동인구</h4>
+			<div id="dayOfTheWeek" class="table-responsive">
+				<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
 						<th scope=" col">
-				</th>
-				<th scope="col">2021년 4분기</th>
-				<th scope="col">2022년 1분기</th>
-				<th scope="col">2022년 2분기</th>
-				<th scope="col">2022년 3분기</th>
-				<th scope="col">2022년 4분기</th>
-				<th scope="col">2023년 1분기</th>
-				<th scope="col">2023년 2분기</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">송파구 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+					</th>
+					<th scope="col">2021년 4분기</th>
+					<th scope="col">2022년 1분기</th>
+					<th scope="col">2022년 2분기</th>
+					<th scope="col">2022년 3분기</th>
+					<th scope="col">2022년 4분기</th>
+					<th scope="col">2023년 1분기</th>
+					<th scope="col">2023년 2분기</th>
 					</tr>
-					<tr>
-						<th scope="row">성남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<th scope="row">하남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-
-	<!--거주인구------------------------------------------------------------------------------------------->
-
-	<div class="container">
-		<h1 style="margin-top: 50px;">주거인구</h1>
-		<h4 style="margin-top: 50px;">주거인구 추이</h4>
-
-		<div id="residentDashboard">
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">송파구 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">성남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">하남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 
-		<div id="residentTable" class="table-responsive">
-			<table class="table table-bordered border-black align-middle text-center"">
+		<!--거주인구------------------------------------------------------------------------------------------->
+
+		<div class="container" id="shadow">
+			<h1 style="margin-top: 50px;">주거인구</h1>
+			<h4 style="margin-top: 50px;">주거인구 추이</h4>
+
+			<div id="residentDashboard">
+			</div>
+
+			<div id="residentTable" class="table-responsive">
+				<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
 						<th scope=" col">
-				</th>
-				<th scope="col">2019년</th>
-				<th scope="col">2020년</th>
-				<th scope="col">2021년</th>
-				<th scope="col">2022년</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">송파구 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+					</th>
+					<th scope="col">2019년</th>
+					<th scope="col">2020년</th>
+					<th scope="col">2021년</th>
+					<th scope="col">2022년</th>
 					</tr>
-					<tr>
-						<th scope="row">성남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<th scope="row">하남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">송파구 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">성남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">하남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 
 
-		<div id="ageGender"  class="table-responsive">
-			<h4 style="margin-top: 50px;">성별, 연령대별 주기인구</h4>
-			<table class="table table-bordered border-black align-middle text-center"">
+			<div id="ageGender" class="table-responsive">
+				<h4 style="margin-top: 50px;">성별, 연령대별 주기인구</h4>
+				<table class="table table-bordered border-black align-middle text-center"">
 			<thead>
 				<tr>
 					<th scope=" col" rowspan="2">
-				</th>
-				<th scope="col" colspan="2">성별</th>
-				<th scope="col" colspan="7">연령</th>
-				</tr>
-				<tr>
-					<th scope="col">남성</th>
-					<th scope="col">여성</th>
-					<th scope="col">10미만</th>
-					<th scope="col">10대</th>
-					<th scope="col">20대</th>
-					<th scope="col">30대</th>
-					<th scope="col">40대</th>
-					<th scope="col">50대</th>
-					<th scope="col">60대이상</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">송파구 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+					</th>
+					<th scope="col" colspan="2">성별</th>
+					<th scope="col" colspan="7">연령</th>
 					</tr>
 					<tr>
-						<th scope="row">성남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+						<th scope="col">남성</th>
+						<th scope="col">여성</th>
+						<th scope="col">10미만</th>
+						<th scope="col">10대</th>
+						<th scope="col">20대</th>
+						<th scope="col">30대</th>
+						<th scope="col">40대</th>
+						<th scope="col">50대</th>
+						<th scope="col">60대이상</th>
 					</tr>
-					<tr>
-						<th scope="row">하남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-
-	<!--인구예측------------------------------------------------------------------------------------------->
-
-	<div class="container">
-		<h1 style="margin-top: 50px;">인구 예측</h1>
-		<h4 style="margin-top: 50px;">인구예측</h4>
-
-		<div id="forecastDashboard">
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">송파구 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">성남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">하남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
 
-		<div id="forecastTable"  class="table-responsive">
-			<table class="table table-bordered border-black align-middle text-center"">
+		<!--인구예측------------------------------------------------------------------------------------------->
+
+		<div class="container" id="shadow">
+			<h1 style="margin-top: 50px;">인구 예측</h1>
+			<h4 style="margin-top: 50px;">인구예측</h4>
+
+			<div id="forecastDashboard">
+			</div>
+
+			<div id="forecastTable" class="table-responsive">
+				<table class="table table-bordered border-black align-middle text-center"">
 				<thead>
 					<tr>
 						<th scope=" col">
-				</th>
-				<th scope="col">2019년</th>
-				<th scope="col">2020년</th>
-				<th scope="col">2021년</th>
-				<th scope="col">2022년</th>
-				<th scope="col">2023년</th>
-				<th scope="col">2024년</th>
-				<th scope="col">2025년</th>
-				</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<th scope="row">송파구 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
+					</th>
+					<th scope="col">2019년</th>
+					<th scope="col">2020년</th>
+					<th scope="col">2021년</th>
+					<th scope="col">2022년</th>
+					<th scope="col">2023년</th>
+					<th scope="col">2024년</th>
+					<th scope="col">2025년</th>
 					</tr>
-					<tr>
-						<th scope="row">성남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-					<tr>
-						<th scope="row">하남시 위례동</th>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-						<td>-</td>
-					</tr>
-				</tbody>
-			</table>
+					</thead>
+					<tbody>
+						<tr>
+							<th scope="row">송파구 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">성남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+						<tr>
+							<th scope="row">하남시 위례동</th>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+							<td>-</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
 		</div>
+
+		<div style="height: 50px; width: 100px;"></div>
 	</div>
 
-
-	
 	<!-- footer------------------------------------ ------------------------------------------------------->
-
 	<footer class="text-body-secondary py-5">
 		<div class="container">
-			<p class="float-end mb-1">
-				<!-- <a href="#">Back to top</a> -->
-			</p>
-			<p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam delectus voluptates iste
-				expedita alias accusantium vero, atque ipsa sapiente corporis? Est dicta obcaecati, eligendi accusamus minima
-				nulla quos quo culpa.</p>
-			<p class="mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sequi esse adipisci iure, blanditiis,
-				a quibusdam quo maiores vel dignissimos quae optio molestiae culpa enim, praesentium minima ipsa ad! Distinctio.
-			</p>
+			<div class="row">
+				<div class="col-6">
+					<p class="mb-1">이용약관 개인정보처리방침 회사소개</p>
+					<p></p>
+					<p class="mb-1">서울특별시 마포구 </p>
+					<p class="mb-0">대표번호 : 02-1111-1111 l FAX : 02-111-1111</p>
+				</div>
+				<div class="col-6">
+					<p class="float-end mb-1">
+						Lorem ipsum dolor sit amet consectetu
+					</p>
+				</div>
+			</div>
 		</div>
 	</footer>
+
 
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 	<script src="js/charts.js"></script>
